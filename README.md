@@ -72,9 +72,9 @@ Plug your servo cables into the yellow/red/black headers on the PCA9685.
 
 ## 🖼️ Hardware Gallery
 
-| Top View | Side View | Front View |
-| :---: | :---: | :---: |
-| ![Top View](images/setup_top.jpg) | ![Side View](images/setup_side.jpg) | ![Front View](images/setup_front.jpg) |
+| Top View | Side View | Front View | Mechanism View |
+| :---: | :---: | :---: | :---: |
+| ![Top View](images/setup_top.jpg) | ![Side View](images/setup_side.jpg) | ![Front View](images/setup_front.jpg) | ![Mechanism View](images/setup_hand_isolated.jpg) |
 
 ## 📦 Installation
 
