@@ -19,9 +19,9 @@ An AI-powered controller for a **5-DOF Metal Humanoid Robotic Hand**. This proje
 | :---: | :---: | :---: |
 | ![Rock](images/demo_rock.png) | ![Paper](images/demo_paper.png) | ![Scissors](images/demo_scissors.png) |
 
-# 🛠️ Hardware & Wiring Guide
+## 🛠️ Hardware & Wiring Guide
 
-## 🧰 Materials List
+### 🧰 Materials List
 * **Raspberry Pi 5** (4GB or 8GB recommended for smooth MediaPipe tracking).
 * **5-DOF Metal Humanoid Robotic Hand:**
     * Left or Right hand model (Metal structure).
@@ -36,16 +36,14 @@ An AI-powered controller for a **5-DOF Metal Humanoid Robotic Hand**. This proje
 * **Jumper Wires:** Female-to-Female for the Pi-to-Driver connection.
 * **USB Webcam:** Any standard 720p/1080p webcam (Logitech C920 used in demo).
 
----
+### 🔌 Wiring Instructions
 
-## 🔌 Wiring Instructions
-
-### 1. Power Supply Wiring (The Most Important Step)
+#### 1. Power Supply Wiring (The Most Important Step)
 The servos need their own power source. The PCA9685 driver has a screw terminal block (green) for this purpose.
 * **External 5V (+) ->** Connect to the **V+** screw terminal on the PCA9685.
 * **External GND (-) ->** Connect to the **GND** screw terminal on the PCA9685.
 
-### 2. Raspberry Pi to PCA9685 (I2C Connection)
+#### 2. Raspberry Pi to PCA9685 (I2C Connection)
 Connect the PCA9685 header pins to the Raspberry Pi GPIO header:
 
 | PCA9685 Pin | Raspberry Pi 5 Pin | Function |
@@ -58,7 +56,7 @@ Connect the PCA9685 header pins to the Raspberry Pi GPIO header:
 
 > **⚠️ Warning:** Connect VCC to **3.3V**, not 5V. The Pi's logic level is 3.3V.
 
-### 3. Servo Motor Connections
+#### 3. Servo Motor Connections
 Plug your servo cables into the yellow/red/black headers on the PCA9685.
 * **Orientation:** The **Orange/Yellow** wire (Signal) goes to the **Top** (PWM) pin. The **Brown/Black** wire (Ground) goes to the **Bottom** (GND) pin.
 
@@ -71,6 +69,12 @@ Plug your servo cables into the yellow/red/black headers on the PCA9685.
 | **Pinky Finger** | **Channel 4** | **Reversed Logic** (Closed=Low) |
 
 *(Note: Channels 3 and 4 are reversed in software because the servos are physically mounted in the opposite direction on the metal frame.)*
+
+## 🖼️ Hardware Gallery
+
+| Top View | Side View | Front View |
+| :---: | :---: | :---: |
+| ![Top View](images/setup_top.jpg) | ![Side View](images/setup_side.jpg) | ![Front View](images/setup_front.jpg) |
 
 ## 📦 Installation
 
